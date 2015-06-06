@@ -5,7 +5,8 @@ var React = require('react-native');
 var {
   Text,
   View,
-  StyleSheet
+  StyleSheet,
+  MapView
 } = React;
 
 var styles = StyleSheet.create({
@@ -17,6 +18,10 @@ var styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#0079c2'
   },
+  map: {
+    marginTop: 65,
+    height: 600
+  },
   title: {
     marginBottom: 20,
     fontSize: 20,
@@ -26,10 +31,25 @@ var styles = StyleSheet.create({
 });
 
 class Map extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      mapRegion: null,
+      mapRegionInput: null,
+      annotations: null,
+      isFirstLoad: true,
+    }
+  }
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.title}>MapView</Text>
+      <View>
+        <MapView
+          style={styles.map}
+          onRegionChange={this._onRegionChange}
+          onRegionChangeComplete={this._onRegionChangeComplete}
+          region={this.state.mapRegion}
+          annotations={this.state.annotations}
+        />
       </View>
     )
   }
