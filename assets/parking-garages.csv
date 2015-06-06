@@ -1,4 +1,4 @@
-Location Number,facility,address,latitude,longitude,Total Spaces,cost
+locationnumber,facility,address,latitude,longitude,totalspaces,cost
 270,Civic,41 Harrison Avenue,42.103007,-72.587997,1232,$95 
 271,Winter,451 Worthington Street,42.106671,-72.589411,115,$60 
 272,I-91 North,1870 East Columbus,42.102997,-72.594833,1098,$85 
@@ -8,8 +8,3 @@ Location Number,facility,address,latitude,longitude,Total Spaces,cost
 276,Apremont,33 Pearl Street,42.106007,-72.587871,35,$60 
 278,Columbus,150 Bridge Street,42.102793,-72.593233,493,$85 
 279,Dwight,339 Worthington Street,42.105715,-72.590553,108,$60 
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
