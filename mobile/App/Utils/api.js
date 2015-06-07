@@ -2,7 +2,7 @@
 
 var api = {
   getMapData() {
-    var url = `https://api.github.com/users/klgilbert`;
+    var url = `https://localhost:50000/api/garage`;
     return fetch(url).then((res) => res.json())
   }
 };
