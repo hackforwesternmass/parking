@@ -91,17 +91,18 @@ class Main extends React.Component{
       selectedTab: 'mapTab',
       mapRegionInput: null,
       annotations: [
-        { latitude: 42.103007, longitude: -72.587997, title: "41 Harrison Avenue", subtitle: "$95" },
-        { latitude: 42.106671, longitude: -72.589411, title: "451 Worthington Street", subtitle: "$60" },
-        { latitude: 42.102997, longitude: -72.594833, title: "I-91 North", subtitle: "$85" },
+        { latitude: 42.103007, longitude: -72.587997, title: "41 Harrison Avenue", subtitle: "$95/month" },
+        { latitude: 42.106671, longitude: -72.589411, title: "451 Worthington Street", subtitle: "$60/month" },
+        { latitude: 42.102997, longitude: -72.594833, title: "I-91 North [CLOSED]", subtitle: "$85//month" },
 
-        { latitude: 42.104793, longitude: -72.591821, title: "I-91 South", subtitle: "$85" },
-        { latitude: 42.104607, longitude: -72.592836, title: "Taylor", subtitle: "$60" },
-        { latitude: 42.106007, longitude: -72.593217, title: "Morgan", subtitle: "$60" },
+        { latitude: 42.10144, longitude: -72.5918207, title: "I-91 South [CLOSED]", subtitle: "$85/month" },
 
-        { latitude: 42.102793, longitude: -72.587871, title: "Apremont", subtitle: "$85" },
-        { latitude: 42.105715, longitude: -72.593233, title: "Columbus", subtitle: "$60" },
-        { latitude: 42.105715, longitude: -72.590553, title: "Dwight", subtitle: "$60" }
+        { latitude: 42.104607, longitude: -72.592836, title: "Taylor", subtitle: "$60/month" },
+        { latitude: 42.106007, longitude: -72.593217, title: "Morgan", subtitle: "$60/month" },
+
+        { latitude: 42.102793, longitude: -72.587871, title: "Apremont", subtitle: "$85/month" },
+        { latitude: 42.105715, longitude: -72.593233, title: "Columbus", subtitle: "$60/month" },
+        { latitude: 42.105715, longitude: -72.590553, title: "Dwight", subtitle: "$60/month" }
       ],
       mapRegion: {
         latitude: 42.10627358240762, longitude: -72.591905666854421, latitudeDelta: .01, longitudeDelta: .01
