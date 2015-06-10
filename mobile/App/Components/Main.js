@@ -164,11 +164,11 @@ class Main extends React.Component{
       <TabBarIOS>
         <TabBarIOS.Item
           title="On Street Parking"
-          systemIcon="featured"
-          selected={this.state.selectedTab === 'street'}
+          icon={{uri:'list'}}
+          selected={this.state.selectedTab === 'streetTab'}
           onPress={() => {
             this.setState({
-              selectedTab: 'street',
+              selectedTab: 'streetTab',
             });
           }}>
           <ScrollView style={styles.scrollViewContainer}>
@@ -177,7 +177,7 @@ class Main extends React.Component{
         </TabBarIOS.Item>
         <TabBarIOS.Item
           title="Map"
-          systemIcon="search"
+          icon={{uri:'map'}}
           selected={this.state.selectedTab === 'mapTab'}
           onPress={() => {
             this.setState({
@@ -195,8 +195,8 @@ class Main extends React.Component{
             </View> 
         </TabBarIOS.Item>
         <TabBarIOS.Item
-          title="App Information"
-          systemIcon="more"
+          title="Information"
+          icon={{uri:'information'}}
           selected={this.state.selectedTab === 'infoTab'}
           onPress={() => {
             this.setState({
@@ -205,7 +205,7 @@ class Main extends React.Component{
           }}>
           <Text style={styles.tabText}>
              The Springfield Parking Authority is responsible for the management of a comprehensive off-street parking system.
-             We also manage the city’s on-street parking and towing operations. This mobile application is an up-to-date collection
+             They also manage the city’s on-street parking and towing operations. This mobile application is an up-to-date collection
              of parking locations in downtown Springfield. The information retrieved by this application is updated daily so you know
              if there's a change in availability.
            </Text>
